@@ -1,0 +1,602 @@
+
+@font-face {
+    font-family: "poppin";
+    src: url(../fonts/poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "open";
+    src: url(../fonts/open/static/OpenSans/OpenSans-Medium.ttf);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-color:#f25454;
+    --text-p-color: #999
+}
+
+/* start-nav */
+.navbar{
+    border-bottom: 1px solid rgba(235, 235, 235, 0.2);
+}
+
+
+.nav-link{
+    transition: all 0.5s;
+    
+}
+
+.nav-item:hover .nav-link{
+    color: var(--main-color);
+
+}
+
+.navbar .icons-contact  i{
+    font-size: 1.2rem;
+}
+
+
+
+.navbar .icons-contact  a{
+    color: white;
+}
+.icons-contact  a{
+    transition: all 0.5s;
+
+}
+
+
+
+.icons-contact:hover  a{
+    color: var(--main-color);
+
+}
+
+/* end-nav */
+
+
+
+/* home-start */
+#home{
+    background-image: url(../img/slideshow-3.jpg);
+    background-position: center;
+    background-size: cover ;
+    
+
+}
+
+
+
+#home .layer{
+    background-color: rgba(0, 0, 0, 0.2);
+
+
+}
+
+#home .layer h1{
+    font-size: 3.5rem;
+    font-family: "poppin";
+    
+}
+
+#home .content{
+    /* background-color: #f25454; */
+    width: 28rem;
+    /* font-size: x-large; */
+}
+
+@media screen and (max-width:768px)  {
+    #home .layer h1 {
+        
+       font-size: 2rem;
+        
+        
+    }
+
+}
+
+
+/* end-home */
+
+/* ************************ */
+
+/* start- about us */
+
+.section-title{
+    position: relative;
+}
+
+.section-title h3{
+    font-size: 3rem;
+    font-family: "poppin";
+}
+
+.section-header h2{
+    font-size: 4rem;
+    text-transform:capitalize;
+    /* letter-spacing: 20px; */
+    color: rgba(0, 0, 0, 0.5);
+    transform: translateY(-20%);
+    
+}
+
+.section-header h3::after{
+    content: "";
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    bottom: -1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-header::after {
+    content: "";
+    width: 5%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 2s;
+} 
+
+
+.section-header:hover::after{
+    width: 10%;
+}
+
+.section-title p{
+    color: var(--text-p-color);
+    font-family: "open";
+}
+
+.about-text p{
+    font-family: "open";
+    font-size: 0.95rem;
+    /* color: red; */
+}
+
+.rating-label{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: teal; */
+}
+
+.rating-label-1{
+    width: 80%;
+}
+.rating-label-2{
+    width: 95%;
+}
+.rating-label-3{
+    width: 85%;
+}
+.rating-label-4{
+    width: 70%;
+}
+
+
+
+.progress{
+    
+    height: 0.5rem;
+}
+
+.progress-bar{
+    background-color: var(--main-color);
+}
+
+
+@media screen and (max-width:768px)  {
+    .about-text {
+        
+       margin-bottom: 3rem;
+        
+        
+    }
+
+}
+@media screen and (max-width:768px)  {
+    #about-us {
+        
+       margin-bottom: 5rem;
+        
+        
+    }
+
+}
+
+/* end- about us */
+
+
+/* ************************* */
+
+
+/* start - our team */
+
+
+
+.img-caption{
+    background-color: rgb(255, 80, 80,0.7);
+    /* width: 95%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 1s;
+
+
+}
+
+.team-main:hover .img-caption{
+    opacity: 1;
+    
+}
+
+.team-content img{
+    transition: all 1s;
+}
+
+.team-main:hover img{
+    transform: scale(1.2);
+}
+
+#our-team i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.team-question h3{
+    font-family: "poppin";
+}
+
+#our-team button{
+    background-color: var(--main-color);
+    border: none;
+    
+}
+
+#our-team button:hover {
+    background-color: #f47171;
+}
+
+
+.team-span{
+    transition: all 1s;
+}
+.team-main:hover .team-span{
+    color: var(--main-color);
+}
+
+
+
+
+
+/* end - our team */
+
+
+
+
+/* ********************** */
+
+
+
+
+/* start-services */
+
+#services{
+    background-color: rgb(224, 224, 224);
+    padding: 5rem 0;
+}
+
+
+#services i{
+    color: var(--main-color);
+}
+
+.service-content{
+    display: flex;
+
+}
+
+
+.service-icon i{
+    font-size: 2rem;
+}
+
+.service-content h3{
+    transition: all 0.5s;
+}
+
+.service-content:hover h3{
+    color: var(--main-color);
+}
+
+
+.service-text h3{
+    font-family: "poppin";
+}
+
+@media screen and (max-width:768px)  {
+    #services {
+        
+      padding: 6rem 0;
+        
+        
+    }
+
+}
+
+
+@media screen and (max-width:768px)  {
+    .service-content {
+        
+      margin-bottom: -2rem;
+        
+        
+    }
+
+}
+
+
+/* end-services */
+
+/* ******************** */
+
+/* start-client */
+.carousel-indicators [data-bs-target]{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    text-indent: 0;
+    margin-bottom: 3rem;
+}
+
+#client .carousel-item p{
+    /* color: var(--text-p-color); */
+    /* font-size: 2rem; */
+    /* padding: 20rem; */
+    
+}
+
+@media screen and (max-width:768px)  {
+    .carousel-item p {
+        
+      /* color: red; */
+        
+        
+    }
+
+}
+
+
+/* end-client */
+
+
+/* ************* */
+
+/* start-touch */
+#touch{
+    background-color: rgb(224, 224, 224);
+    padding: 6rem 0;
+
+}
+
+
+#touch li{
+    list-style: none;
+    
+}
+#touch i{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--main-color);
+}
+
+.address h3{
+    font-family: "poppin";
+}
+.address li h4{
+    transition: all 1s;
+}
+
+.address li:hover h4{
+    color: var(--main-color);
+}
+
+#touch button{
+    background-color: var(--main-color);
+}
+
+
+#touch button i{
+    color: white;
+    font-size: 1.5rem;
+}
+
+#touch button:hover {
+    background-color: #f47171;
+}
+
+
+
+
+
+@media screen and (max-width:768px)  {
+    #touch {
+        
+      /* background-color: red; */
+      /* padding: 10rem 0; */
+        
+        
+    }
+
+}
+
+
+/* end-touch */
+
+
+/* **************** */
+
+
+
+/* start-links */
+
+#links{
+    background-image: url(../img/white-dots-world-map-vector.jpg);
+    background-position: center;
+    background-size: cover ;
+    
+    position: relative;
+    /* padding: 2rem; */
+
+}
+
+
+
+#links .layer{
+    background-color: rgba(12, 12, 12, 0.973);
+    
+
+
+}
+
+
+#links .col-md-3{
+    z-index:1;
+}
+
+
+.link-data a{
+    
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+#links ul{
+    list-style: none;;
+}
+
+
+.link-data{
+    color: var(--text-p-color);
+}
+
+.link-data a{
+    color: var(--text-p-color);
+}
+
+.link-data a:hover{
+    color: var(--main-color);
+}
+
+
+
+.link-data-2 .link-direct a{
+    color: #999;
+    text-decoration: none;
+}
+
+.link-data-2 .link-direct a{
+    transition: all 0.5s;
+}
+
+.link-direct:hover a{
+    color: var(--main-color);
+}
+
+
+
+.link-direct{
+    border: 1px solid  #999;
+}
+
+.link-direct{
+    transition: all 0.5;
+}
+
+.link-direct:hover {
+    border: 1px solid  #f25454;
+}
+
+
+
+.links-content .tr-btn{
+  
+    text-align: center;
+    position: absolute;
+    left: 47%;
+    top: 0;
+    transform: translateY(-170%);
+    
+    
+}
+
+.tr-btn button{
+    /* background-color: blue; */
+    border-radius: 50%;
+    background-color: rgb(242, 84, 84,0.5);
+}
+
+
+
+/* end-links */
+
+
+
+
+
+
+/* footer */
+
+#web-footer i{
+    color: white;
+    font-size: 1.2rem;
+}
+#web-footer p{
+    color: var(--text-p-color);
+}
+#web-footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#web-footer .icons-contact i{
+    transition: all 0.5s;
+}
+
+#web-footer .icons-contact:hover i{
+    color: var(--main-color);
+}
+#web-footer .foot-txt a{
+    transition: all 0.5s;
+}
+
+#web-footer .foot-txt:hover a{
+    color: var(--main-color);
+}
+
+
+@media screen and (max-width:768px)  {
+    .foot-2 {
+        
+      /* background-color: red; */
+      /* padding: 10rem 0; */
+      padding: 1.5rem 0rem;
+      display: flex;
+      flex-direction: column;
+     
+        
+        
+    }
+
+}
